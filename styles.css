@@ -42,6 +42,57 @@ table {
 
 /****************** End CSS RESET *****************/
 
+#responsive
+{
+
+    color: white;
+    display: none;
+    margin: auto;
+    width: 550x;
+    height: 400px;
+    text-align: center;
+    
+    vertical-align: middle;
+
+    
+
+}
+
+#responsive h1
+{
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 300;
+    margin: 60px;
+    line-height: 70px;
+}
+
+#responsive footer
+{
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 1920px) 
+{
+    #container 
+    {
+        display: none;
+        
+        
+    }
+
+    body
+    {
+        height: 100vh;
+    }
+
+    #responsive
+    {
+        
+        display: block;
+        
+    }
+}
 
 
 body
@@ -51,7 +102,7 @@ body
     font-family: 'Lato', sans-serif;
 }
 
-.container
+#container
 {
     width: 1366px;
 
@@ -168,17 +219,17 @@ nav li
     list-style: none;
 }
 
-footer
+.footer
 {
     text-align: center;
-    height: 95px;
+    height: 70px;
     clear: both;
     position: relative;
     margin-bottom: 300px;
 
 }
 
-footer p
+.footer p
 {
     position: absolute;
     top: 13px;
