@@ -46,17 +46,33 @@ table {
 {
 
     color: white;
-    display: none;
     margin: auto;
-    width: 550x;
-    height: 400px;
     text-align: center;
-    
-    vertical-align: middle;
-
-    
+    margin-left: auto;
+    margin-right: auto; 
 
 }
+
+#mob, #des
+{
+    display: none;
+}
+
+#wrapper
+{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#anchor
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
 
 #responsive h1
 {
@@ -74,24 +90,53 @@ table {
 
 @media only screen and (max-width: 1920px) 
 {
+    
     #container 
     {
+        
         display: none;
         
-        
     }
 
-    body
+    #wrapper
     {
-        height: 100vh;
+        display: table;
     }
 
-    #responsive
+    #des
     {
-        
         display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) 
+{
+    
+    #container 
+    {
+        
+        display: none;
         
     }
+
+    #wrapper
+    {
+        display: table;
+    }
+
+
+    #mob
+    {
+        display: block;
+    }
+
+    #des
+    {
+        display: none;
+    }
+
+        
 }
 
 
