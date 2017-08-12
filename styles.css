@@ -130,7 +130,7 @@ table {
 
 }
 
-@media only screen and (max-width: 1024px) 
+@media only screen and (max-width: 960px) 
 {
     
 
@@ -156,7 +156,7 @@ table {
     
 }
 
-@media only screen and (max-width: 960px) 
+@media only screen and (max-width: 800px) 
 {
     
     #container 
