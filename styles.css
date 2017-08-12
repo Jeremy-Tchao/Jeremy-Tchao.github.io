@@ -90,6 +90,7 @@ table {
     position: absolute;
     height: 100%;
     width: 100%;
+    background-color: #00a7fe;
 }
 
 #anchor
@@ -146,7 +147,7 @@ table {
     #wrapper
     {
         display: table;
-        background-color: #00a7fe;
+        
     }
 
     #des
