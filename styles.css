@@ -55,17 +55,20 @@ table {
 
 }
 
-#responsive p, a
-{
-    font-size: 30px;
-    
-}
-
 #responsive p a
 {
 
     color: white;
     
+}
+#rcon
+{
+    font-size: 34px;
+
+}
+#rsocial
+{
+    font-size: 70px;
 }
 
 #responsive p a:hover
