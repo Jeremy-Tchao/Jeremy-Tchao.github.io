@@ -55,12 +55,21 @@ table {
 
 }
 
+#responsive img
+{
+    width: 200px;
+    margin-top: 80px;
+}
+
+
 #responsive p a
 {
 
     color: white;
     
 }
+
+
 #rcon
 {
     font-size: 34px;
@@ -82,6 +91,13 @@ table {
 #mob, #des
 {
     display: none;
+}
+
+#des p
+{
+
+    margin-top: -60px;
+    font-size: 17px;
 }
 
 #wrapper
