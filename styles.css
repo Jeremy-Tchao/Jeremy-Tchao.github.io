@@ -330,7 +330,7 @@ nav li
 .footer
 {
     text-align: center;
-    height: 70px;
+    height: 80px;
     clear: both;
     position: relative;
     margin-bottom: 300px;
@@ -340,7 +340,7 @@ nav li
 .footer p
 {
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: 620px;
     font-weight: 100;
     font-size: 14px;
@@ -352,6 +352,14 @@ footer p a
 {
     display: inline-block;
     margin-top: 7px;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer p a:hover
+{
+    color: #00a7fe;
 }
 
 .social
