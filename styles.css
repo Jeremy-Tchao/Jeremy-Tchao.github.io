@@ -81,14 +81,19 @@ table {
 
 #rcon
 {
-    font-size: 34px;
+    font-size: 35px;
     font-weight: 300;
-
+    line-height: 32px;
 }
+
 #rsocial
 {
-    font-size: 70px;
-    margin-top: -15px;
+    font-size: 60px;
+}
+
+#rsocial .social
+{
+    font-size: 25px;
 }
 
 #github
@@ -351,7 +356,7 @@ nav li
 #mfooter
 {
     text-align: center;
-    height: 120px;
+    height: 125px;
     clear: both;
     position: relative;
     margin-bottom: 300px;
@@ -361,13 +366,20 @@ nav li
 #mfooter p
 {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 620px;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Roboto';
 
 }
+
+#con
+{
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
 
 footer img
 {
@@ -379,8 +391,6 @@ footer p a
 {
     display: inline-block;
     color: white;
-    text-decoration: none;
-    line-height: 20px;
 
 }
 
@@ -391,7 +401,7 @@ footer p a:hover
 
 .social
 {
-    font-size: 24px;
+    font-size: 27px;
     margin-bottom: 15px;
 }
 
