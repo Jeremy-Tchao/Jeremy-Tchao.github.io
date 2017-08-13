@@ -58,8 +58,10 @@ table {
 #responsive img
 {
     width: 130px;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: -35px;
 }
+
 
 
 #responsive p a
@@ -69,15 +71,32 @@ table {
     
 }
 
+#resf img
+{
+    width: 70px;
+    margin-top: 14px;
+    margin-bottom: -5px;
+    
+}
 
 #rcon
 {
     font-size: 34px;
+    font-weight: 300;
 
 }
 #rsocial
 {
     font-size: 70px;
+    margin-top: -15px;
+}
+
+#github
+{
+    line-height: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+    
 }
 
 #responsive p a:hover
@@ -86,6 +105,8 @@ table {
     color: #378cba;
     
 }
+
+
 
 
 #mob, #des
@@ -327,17 +348,17 @@ nav li
     list-style: none;
 }
 
-.footer
+#mfooter
 {
     text-align: center;
-    height: 80px;
+    height: 120px;
     clear: both;
     position: relative;
     margin-bottom: 300px;
 
 }
 
-.footer p
+#mfooter p
 {
     position: absolute;
     top: 10px;
@@ -348,12 +369,18 @@ nav li
 
 }
 
+footer img
+{
+    width: 70px;
+    margin-top: 4px;
+}
+
 footer p a
 {
     display: inline-block;
-    margin-top: 7px;
     color: white;
     text-decoration: none;
+    line-height: 20px;
 
 }
 
@@ -365,6 +392,7 @@ footer p a:hover
 .social
 {
     font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .projects
