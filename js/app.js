@@ -72,18 +72,30 @@ var projects = [{
 
 function initView() {
 
-    for(var i = 0, len = projects.length; i < len; i++) {
-        console.log(projects[i]);
-        $("#projects-list").append(`
-            <a name="project${i + 1}"></a>
-            <section id="p${i + 1}" class="projects">
-                <img src=${projects[i].imageLink} alt="project${i + 1}">
-                <h1>${projects[i].title}</h1>
-                <p>${projects[i].description}</p>
-            </section>
-        `);
-    }
+    // for(var i = 0, len = projects.length; i < len; i++) {
+    //     console.log(projects[i]);
+    //     $("#projects-list").append(`
+    //         <a name="project${i + 1}"></a>
+    //         <section id="p${i + 1}" class="projects">
+    //             <img src=${projects[i].imageLink} alt="project${i + 1}">
+    //             <h1>${projects[i].title}</h1>
+    //             <p>${projects[i].description}</p>
+    //         </section>
+    //     `);
+    // }
     
+    var formatetdContent = projects.map(function(obj, index){
+        var formattedProject = `<a name="project${index + 1}"></a> 
+            <section id="p${index + 1}" class="projects">
+                <img src=${obj.imageLink} alt="project${index + 1}">
+                <h1>${obj.title}</h1>
+                <p>${obj.description}</p>
+            </section>`;
+        return formattedProject;
+    });
+
+    $("#projects-list").append(formatetdContent.join(""));
+
 } // initView()
 
 initView();
