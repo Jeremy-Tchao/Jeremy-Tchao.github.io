@@ -69,3 +69,21 @@ var projects = [{
         description: 'This project calls for a design of Paul Rand\'s book: "The Play Instinct". It has to accentutate the playfulness and salute the artistic elements mentioned in the book.\n\nSo I selected the Golden Ratio as the ratio for the spread and applied the principles of golden seperation throughout the book. Because the Golden Ratio is long regarded as the key to achieve aesthetics throughout the history of art.\n\nBut using this unconventinoal ratio is not easy to implement: I have spent a lot of time trying to figure out a layout that both preserves the functionality of the book while demonstrating the Golden Ratio. But I jumped out of the box to design for the whole spread instead of just a single page.\n\nTherfore I am really proud of the final design, I really do think it is cool!'
     }
 ];
+
+function initView() {
+
+    for(var i = 0, len = projects.length; i < len; i++) {
+        console.log(projects[i]);
+        $("#projects-list").append(`
+            <a name="project${i + 1}"></a>
+            <section id="p${i + 1}" class="projects">
+                <img src=${projects[i].imageLink} alt="project${i + 1}">
+                <h1>${projects[i].title}</h1>
+                <p>${projects[i].description}</p>
+            </section>
+        `);
+    }
+    
+} // initView()
+
+initView();
