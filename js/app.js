@@ -127,19 +127,6 @@ function formatSocial(option) {
 }
 
 function initView() {
-
-    // for(var i = 0, len = projects.length; i < len; i++) {
-    //     console.log(projects[i]);
-    //     $("#projects-list").append(`
-    //         <a name="project${i + 1}"></a>
-    //         <section id="p${i + 1}" class="projects">
-    //             <img src=${projects[i].imageLink} alt="project${i + 1}">
-    //             <h1>${projects[i].title}</h1>
-    //             <p>${projects[i].description}</p>
-    //         </section>
-    //     `);
-    // }
-
     // format the navigation menu using  short titles
     var formattedNav = projects.map(function(project, index){
         return `<li><a href="index.html#project${index + 1}">${project.shortTitle}</a></li>`;
