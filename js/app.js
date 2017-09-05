@@ -124,16 +124,18 @@ function formatSocial(option) {
         // give the error message otherwise
         console.log("Invalid option. Try '1x' or '2x'");
     }
-}
+} // formatSocial()
 
-function initView() {
+function displayNav() {
     // format the navigation menu using  short titles
     var formattedNav = projects.map(function(project, index){
         return `<li><a href="index.html#project${index + 1}">${project.shortTitle}</a></li>`;
     });
     // append formatted nav to the right place
     $('#nav-proj-list').append('<li><a href="index.html#header">About Me</a></li>', formattedNav.join(""));
-    
+} // displayNav()
+
+function displaySocial() {
     // format 2 versions of social media icons
     var formattedSocial1x = formatSocial('1x');
     var formattedSocial2x = formatSocial('2x');
@@ -142,7 +144,9 @@ function initView() {
     $('.formatted-social-2x').append(formattedSocial2x.join(" "));
 
     $('.contact-email-link').attr("href", `mailto:${email}`);
+} // displaySocial()
 
+function displayProjects() {
     // format each project and store formatted content in an array 
     var formatetdContent = projects.map(function(obj, index){
         var formattedProject = `<a name="project${index + 1}"></a> 
@@ -155,6 +159,15 @@ function initView() {
     });
     // append formatted content lists to the right place
     $("#projects-list").append(formatetdContent.join(""));
+} // displayProjects()
+
+function initView() {
+    
+    displayNav();
+
+    displaySocial();
+
+    displayProjects();
 
 } // initView()
 
