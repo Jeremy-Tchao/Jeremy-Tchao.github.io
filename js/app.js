@@ -154,6 +154,8 @@ function initView() {
     $('.formatted-social-1x').append(formattedSocial1x.join(" "));
     $('.formatted-social-2x').append(formattedSocial2x.join(" "));
 
+    $('.contact-email-link').attr("href", `mailto:${email}`);
+
     // format each project and store formatted content in an array 
     var formatetdContent = projects.map(function(obj, index){
         var formattedProject = `<a name="project${index + 1}"></a> 
