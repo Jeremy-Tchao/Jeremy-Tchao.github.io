@@ -1,4 +1,6 @@
 var projects = [{
+        shortTitle: "Color Scheme",
+
         title: "Color Scheme Experiment",
 
         imageLink: "images/project1.png",
@@ -12,6 +14,8 @@ var projects = [{
         description: "In this project, I digitally sketched an Boeing 787-9 Dreamliner and the surroundings that it flies within, and created 4 different color schemes using certain combinations, like triad and complementary.\n\nThe drawing of the airplane was really tricky because its details, and what’s more challenging was filling in the colors, because I didn’t close shapes in the first place, so I had to redraw most of the shapes. As for the choosing of the color, it was not that hard, because I already had a few combinations in mind, and they worked great!"
     },
     {
+        shortTitle: "Typeface Poster",
+
         title: "Typeface Poster",
 
         imageLink: "images/project2.png",
@@ -24,6 +28,8 @@ var projects = [{
         description: "This project was a poster for the typeface Bell Centennial. And this typeface was a purposed-designed typeface, so the concept of the poster unveiled itself for me easily: to demonstrate its purpose of increasing legibility for small-size and inferior quality print. However, the execution of the concept was really hard, as my first thoughts of designing a phone-book like poster did not turn out well: they lacked the aesthetic element.\n\nBut later, I was inspired by the design of the font itself: its carving and opening designed to anticipate the spread of the ink is very unique, and decided to emphasize that. And I also decided to use some small-size print to show that the actual functionality of the design."
     },
     {
+        shortTitle: "Event Poster",
+
         title: "Event Poster",
 
         imageLink: "images/project3.png",
@@ -35,6 +41,8 @@ var projects = [{
         description: "In this project, I was tasked with creating a post for a event of my choosing. I first chose the a star-gazing event in the Yosemite National Park. But after playing with the concept a bit, I found that there was little element that I can utilize to make the poster seemed designed. So I switched event to a more familiar topic and culture: a tea exposition in Shanghai. And I was able to create the Asian and Chinese cultural atmosphere that I wanted to show people using the elements that I am familiar with, like classical Chinese and paper.\n\nThe hardest part of designing the post was technical: the color of the bubbles in was really hard to fine-tune, as they are not easy to select."
     },
     {
+        shortTitle: "Figure Poster",
+
         title: "Figure Poster",
 
         imageLink: "images/project4.png",
@@ -46,6 +54,8 @@ var projects = [{
         description: "For this project, I am tasked to create a poster for a person of my choosing. I chose the Chief Design Officer of Apple — Jony Ive, a designer both himself and his work is widely recognized.\n\nIn retrospect, I think this poster was really hard because there was too much to say about him and his work, so I did not focus on a focal point instead I spread out and lost focus. And because of that, I could not make the poster as aesthetically pleasing as my previous ones."
     },
     {
+        shortTitle: "Book Project",
+
         title: '"The Play Instinct" by Paul Rand',
 
         imageLink: "images/project5.png",
@@ -57,6 +67,8 @@ var projects = [{
         description: 'This project calls for a design of Paul Rand\'s book: "The Play Instinct". It has to accentutate the playfulness and salute the artistic elements mentioned in the book.\n\nSo I selected the Golden Ratio as the ratio for the spread and applied the principles of golden seperation throughout the book. Because the Golden Ratio is long regarded as the key to achieve aesthetics throughout the history of art.\n\nBut using this unconventinoal ratio is not easy to implement: I have spent a lot of time trying to figure out a layout that both preserves the functionality of the book while demonstrating the Golden Ratio. But I jumped out of the box to design for the whole spread instead of just a single page.\n\nTherfore I am really proud of the final design, I really do think it is cool!'
     },
     {
+        shortTitle: "Typography Form",
+
         title: "Typography Form Experiment",
 
         imageLink: "images/project6.png",
@@ -111,6 +123,17 @@ function initView() {
     //         </section>
     //     `);
     // }
+    var formattedNavProjList = projects.map(function(project, index){
+        return `<li><a href="index.html#project${index + 1}">${project.shortTitle}</a></li>`;
+    });
+
+    var formattedSocialList = contacts.map(function(site){
+        return `<a href="${site.link}" class="social"><i class="${site.iclass}" aria-hidden="true"></i></a>`;
+    });
+
+    var formattedSocialList2x = contacts.map(function(site){
+        return `<a href="${site.link}" class="social"><i class="${site.iclass} fa-2x" aria-hidden="true"></i></a>`;
+    });
     
     var formatetdContent = projects.map(function(obj, index){
         var formattedProject = `<a name="project${index + 1}"></a> 
