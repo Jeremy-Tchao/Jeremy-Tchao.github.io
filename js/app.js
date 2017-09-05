@@ -70,6 +70,34 @@ var projects = [{
     }
 ];
 
+var contacts = [
+    {
+        title: 'LinkedIn',
+        iclass: 'fa fa-linkedin-square',
+        link: 'https://www.linkedin.com/in/zjzhao/'
+    },
+    {
+        title: 'Instagram',
+        iclass: 'fa fa-instagram',
+        link: 'https://www.instagram.com/jeremytchao/'
+    },
+    {
+        title: 'Flickr',
+        iclass: 'fa fa-flickr',
+        link: 'https://www.flickr.com/photos/90156428@N06/'
+    },
+    {
+        title: 'Facebook',
+        iclass: 'fa fa-facebook-official',
+        link: 'https://www.facebook.com/JeremyTchao'
+    },
+    {
+        title: 'email',
+        iclass: null,
+        link: '&#122;&#106;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'
+    }
+];
+
 function initView() {
 
     // for(var i = 0, len = projects.length; i < len; i++) {
