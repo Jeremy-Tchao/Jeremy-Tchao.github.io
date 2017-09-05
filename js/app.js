@@ -107,7 +107,7 @@ var contacts = [
 
 var email = "&#122;&#106;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;";
 
-function formatSocial(array, option) {
+function formatSocial(option) {
     var formattedSocialList = [];
 
     if (option === "1x") {
@@ -116,7 +116,7 @@ function formatSocial(array, option) {
         });
     } else if (option === "2x") {
         return formattedSocialList = contacts.map(function (site) {
-            return `<a href="${site.link}" class="social"><i class="${site.iclass} 2x" aria-hidden="true"></i></a>`;
+            return `<a href="${site.link}" class="social"><i class="${site.iclass} fa-2x" aria-hidden="true"></i></a>`;
         });
     } else {
         console.log("Invalid option. Try '1x' or '2x'");
@@ -143,6 +143,12 @@ function initView() {
 
     $('#nav-proj-list').append('<li><a href="index.html#header">About Me</a></li>', formattedNavProjList.join(""));
     
+    var formattedSocial1x = formatSocial('1x');
+    var formattedSocial2x = formatSocial('2x');
+    $('.formatted-social-1x').append(formattedSocial1x.join(" "));
+    $('.formatted-social-2x').append(formattedSocial2x.join(" "));
+
+
     var formatetdContent = projects.map(function(obj, index){
         var formattedProject = `<a name="project${index + 1}"></a> 
             <section id="p${index + 1}" class="projects">
