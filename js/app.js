@@ -111,14 +111,17 @@ function formatSocial(option) {
     var formattedSocialList = [];
 
     if (option === "1x") {
+        // use 1x icons if specified
         return formattedSocialList = contacts.map(function (site) {
             return `<a href="${site.link}" class="social"><i class="${site.iclass}" aria-hidden="true"></i></a>`;
         });
     } else if (option === "2x") {
+        // use 2x icons if specified
         return formattedSocialList = contacts.map(function (site) {
             return `<a href="${site.link}" class="social"><i class="${site.iclass} fa-2x" aria-hidden="true"></i></a>`;
         });
     } else {
+        // give the error message otherwise
         console.log("Invalid option. Try '1x' or '2x'");
     }
 }
@@ -137,18 +140,21 @@ function initView() {
     //     `);
     // }
 
-    var formattedNavProjList = projects.map(function(project, index){
+    // format the navigation menu using  short titles
+    var formattedNav = projects.map(function(project, index){
         return `<li><a href="index.html#project${index + 1}">${project.shortTitle}</a></li>`;
     });
-
-    $('#nav-proj-list').append('<li><a href="index.html#header">About Me</a></li>', formattedNavProjList.join(""));
+    // append formatted nav to the right place
+    $('#nav-proj-list').append('<li><a href="index.html#header">About Me</a></li>', formattedNav.join(""));
     
+    // format 2 versions of social media icons
     var formattedSocial1x = formatSocial('1x');
     var formattedSocial2x = formatSocial('2x');
+    // append formatted social lists to the right place
     $('.formatted-social-1x').append(formattedSocial1x.join(" "));
     $('.formatted-social-2x').append(formattedSocial2x.join(" "));
 
-
+    // format each project and store formatted content in an array 
     var formatetdContent = projects.map(function(obj, index){
         var formattedProject = `<a name="project${index + 1}"></a> 
             <section id="p${index + 1}" class="projects">
@@ -158,7 +164,7 @@ function initView() {
             </section>`;
         return formattedProject;
     });
-
+    // append formatted content lists to the right place
     $("#projects-list").append(formatetdContent.join(""));
 
 } // initView()
