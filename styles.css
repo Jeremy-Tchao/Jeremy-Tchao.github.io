@@ -42,6 +42,74 @@ table {
 
 /****************** End CSS RESET *****************/
 
+/*******************nav********************/
+.navs {
+    width: 1200px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 60px;
+    background: #2A2A2A;  
+}
+
+.navsfixed 
+{
+    position: fixed;
+    display: none;
+    margin-top: -363px;
+    width: 1200px;
+    z-index: 180;
+    font-weight: 100;
+    line-height: 60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 180; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.1s; 
+    text-align: right;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+    line-height: 60px;
+    margin-right: 20px;
+    padding: 8px 8px 8px 32px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+}
+
+/*******************end nav*******************/
+
+
+/*******************responsive********************/
+
 #responsive
 {
 
@@ -163,61 +231,82 @@ table {
     
 }
 
-.sep
-{	
-	width: 100%;
-	height: 5px;
-	bottom: 0;
-	background-image: -webkit-gradient(linear, left center, right center, color-stop(0.33, rgb(211,24,111)), color-stop(0.67, rgb(208,161,31)));
-	/*background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0.33, rgb(211,24,111)), color-stop(0.67, rgb(208,161,31)));*/
 
-}
-
-@media only screen and (max-width: 1440px) 
+@media only screen and (max-width: 1365px) 
 {
     
 
     
-    
     #container 
     {
         
-        display: none;
         
+        width: 1024px;
+        margin:auto;
     }
 
-    #wrapper
+    /* .photoa img
     {
-        display: table;
+    
+        height: 100px;
+        margin-top: -150px;
+
+    } */
+
+    /* .projects img
+    {
+    
+        height: 100px;
         
-    }
+    }    */
+
+ 
+    
 
     #des
     {
-        display: block;
+        display: none;
     }
+
+    .navs
+    {
+        width: 1024px;
+    }
+
+  
     
 }
 
-@media only screen and (max-width: 1024px) 
+@media only screen and (max-width: 1023px) 
 {
     
-    #container 
+
+
+    .container 
     {
         
-        display: none;
+        display: block;
+        
         
     }
 
+    .projects img
+    {
+    
+        height: 80%;
+        width: auto;
+        
+    }  
+
     #wrapper
     {
-        display: table;
+        display: none;
     }
 
 
     #mob
     {
-        display: block;
+        display: none;
     }
 
     #des
@@ -226,45 +315,57 @@ table {
     }
 
         
+    
 }
+
+
+
+/*******************end responsive********************/
+
+
 
 
 body
 {
     background-color: #232323;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
 }
 
-#container
+.container
 {
-    width: 1366px;
-
-    background: linear-gradient(to right, rgba(11,11,11,1) 0%, rgba(54,54,54,1) 100%);
+    width: 1200px;
+    background: #2A2A2A;
     margin: auto;
-    
-
 }
 
 
 a
 {
-    color: #378cba;
+    color: white;
 }
 
 header
 {
-    height: 364px;
+    height: 300px;
+    line-height: 300px;
     position: relative;
-    z-index: 1;
     box-shadow: 0px 12px 20px 4px rgba(0,0,0,0.44);
     border-bottom: 2.5px solid #00a7fe;
+    text-align: center;
+    z-index: 1;
+    
+
+    
 }
 
 h1
 {
-    font-size: 28px;
-    font-weight: 100;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    
+
 }
 
 h2
@@ -273,103 +374,258 @@ h2
     font-size: 16px;
 }
 
-#htext
-{
-    position: absolute;
-     left: 360px;
-     top: 50%;
-    transform: translateY(-50%);
 
-}
 
-#para
+
+#htext h1
 {
-    position: absolute;
-    width: 200px;
-     top: 50%;
-    transform: translateY(-50%);
-    line-height: 30px;
-    right: 160px;
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-top: 10px;
+    z-index: 3;
+    
+
+    font-size: 80px;
+    letter-spacing: 3px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-style: normal;
+
 }
 
 
 header img
 {
-    position: absolute;
-    height: 155px;
-    left: 160px;
-    top: 50%;
-    transform: translateY(-50%);
+
+    display: inline-block;
+    vertical-align: middle;
+    height: 120px;
+    line-height: 120px;
+    margin-left: -5px;
     
 }
 
-header h2
+header a
 {
-    margin-top: 10px;
-}
-
-#hfirsth2
-{
-    margin-top: 16px;
-}
-
-#relativelayer
-{
-    position: fixed;
-}
-
-nav
-{
-    background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(23,23,23,1) 100%);
-    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
-    z-index: 1;
-    border-top: 2.5px solid #00a7fe;
-    left: 35px;
-    margin-left: -250px;
-    width: 190px;
-    text-align: left;
+    
+    text-decoration: none;
+    color: white;
+    
+    z-index: 3;
+    display: inline-block;
+    
+    -webkit-transform: perspective(1px);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
     position: relative;
-    top: 364px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    
+    
+}
 
+header a:before {
+    z-index: 3;
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 73%;
+    left: 1%;
+    height:30px;
+    width: 100%;
+    opacity: 1;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+header a:hover
+{
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+header a:hover:before
+{
+
+    transform: translateY(7px) scale(0.75);
+    
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 
 
 
-nav ul li a
+.projects
 {
+    width: 100%;
+    height: 600px;
+    line-height: 600px;
+    position: relative;
+    
+}
+
+.texta 
+{
+
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+    transform: translateZ(0);
     color: white;
     text-decoration: none;
-    display: block;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 60px;
-    margin-left: 20px;
-
+    
 }
 
-nav li
+.photoa 
 {
-    list-style: none;
+
+    height: 380px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -190px;
+    display: block;
+    
+
+
+    
 }
+
+
+.texta:hover,.photoa:hover
+{
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: scale(1.1);
+}
+
+
+.projects img
+{
+
+    height: 380px;
+    box-shadow: 0px 0px 78px -29px rgba(0,0,0,0.75);
+    
+}   
+
+
+.projects h1
+{
+     
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 8px;
+    line-height:2.3;
+    font-style: italic;
+
+    
+}
+
+
+
+
+.projects p
+{
+    font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    line-height: 22px;
+    width: 450px;
+    right: 117px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+
+}
+
+
+
+#p2 h1, #p6 h1
+{
+    color: black;
+}
+
+
+#p1
+{
+    
+    background: linear-gradient(to right, rgba(19,83,128,1) 0%, rgba(209,75,156,1) 100%);
+
+    z-index: 0;
+}
+
+
+
+#p2
+{
+
+    background: linear-gradient(to right, rgba(202,199,4,1) 0%, rgba(255,251,0,1) 100%);
+    color: black;
+    
+}
+
+
+#p2 p, #p3 p, #p5 p, #p6 p 
+{
+    column-count: 2;
+    width:650px;
+}
+
+#p3
+{
+
+    background: linear-gradient(to right, rgba(209,199,183,1) 0%, rgba(125,112,84,1) 100%);
+}
+
+#p4
+{
+    background: linear-gradient(to right, rgb(64, 66, 66) 0%, rgba(133,129,128,1) 100%);
+}
+
+#p5
+{
+    background:linear-gradient(to right, rgba(135,211,237,1) 0%, rgba(0,181,241,1) 100%);
+}
+
+#p6
+{
+    background-color: white;
+    color: black;
+}
+
 
 #mfooter
 {
+
     text-align: center;
-    height: 123px;
+    height: 120px;
     clear: both;
     position: relative;
-    margin-bottom: 300px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 12px 20px 4px rgba(0,0,0,0.44);
 
 }
 
 #mfooter p
 {
-    position: absolute;
-    top: 12px;
-    left: 620px;
-    font-weight: 100;
-    font-size: 12px;
+    display: block;
+    margin: auto;
+    font-weight: 300;
+    font-size: 14px;
     font-family: 'Roboto';
 
 }
@@ -403,99 +659,4 @@ footer p a:hover
 {
     font-size: 27px;
     margin-bottom: 15px;
-}
-
-.projects
-{
-    width: 100%;
-    height: 600px;
-    position: relative;
-    
-}
-
-
-.projects img
-{
-    position: absolute;
-    height: 430px;
-    left: 115px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-
-}
-
-.projects p
-{
-    font-weight: 300;
-    font-size: 14px;
-    position: absolute;
-    line-height: 22px;
-    width: 450px;
-    right: 117px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-
-}
-
-.projects h1
-{
-    position: absolute;
-    left: 115px;
-    top: 30px;
-}
-
-
-
-#p1
-{
-    
-    background: linear-gradient(to right, rgba(19,83,128,1) 0%, rgba(209,75,156,1) 100%);
-    position: relative;
-    z-index: 0;
-}
-
-
-
-#p2
-{
-
-    background: linear-gradient(to right, rgba(202,199,4,1) 0%, rgba(255,251,0,1) 100%);
-    color: black;
-    
-}
-
-
-#p2 p, #p3 p, #p5 p, #p6 p 
-{
-    column-count: 2;
-    width:650px;
-}
-
-#p3
-{
-
-    background: linear-gradient(to right, rgba(209,199,183,1) 0%, rgba(125,112,84,1) 100%);
-}
-
-#p4
-{
-    background: linear-gradient(to right, rgba(30,31,31,1) 0%, rgba(133,129,128,1) 100%);
-}
-
-#p5
-{
-    background:linear-gradient(to right, rgba(135,211,237,1) 0%, rgba(0,181,241,1) 100%);
-}
-
-#p6
-{
-    background-color: white;
-    color: black;
-}
-
-.projects img
-{
-    box-shadow: 0px 0px 78px -29px rgba(0,0,0,0.75);
 }

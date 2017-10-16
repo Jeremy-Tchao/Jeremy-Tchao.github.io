@@ -1,70 +1,181 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <title>Zhaohui Zhao's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Zhaohui Zhao's Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
-    <link async href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-    <link async href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-    <link async rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-</head>
 
-<body>
-    <div id="wrapper">
-        <div id="anchor">
-            <div id="responsive">
-                <img id="avatar" src="images/avatar.png" alt="avatar">
-                <div id="mob">
-                    <h1>Please View My Work <br>on a Desktop <br>in fullscreen :)</h1>
+    </head>
+    
+    
+<!--**********************************Responsive******************************************-->
+	<body>
+
+        <div id="wrapper">
+            <div id="anchor">
+                <div id="responsive">
+                        <img id="avatar" src="images/avatar.png" alt="avatar">
+                        <div id="mob">
+                            <h1>Please View My Work <br>on a Desktop <br>in fullscreen :)</h1>
+                        </div>
+                        <div id="des">
+                            <h1>Please View My Work <br>in fullscreen :)</h1>
+                            <p>*If going fullscreen does not work, try reducing the zoom</p>
+                        </div>
+                        
+                        <footer id='resf'>
+                            <p ><a id="rcon" href="mailto:&#122;&#106;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Zhaohui Zhao</a></p>
+                            
+                            <p id="rsocial">  
+                                <a href="https://www.linkedin.com/in/zjzhao/" class="social"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/jeremytchao/" class="social"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            
+                                <a href="https://www.flickr.com/photos/90156428@N06/" class="social"><i class="fa fa-flickr fa-2x" aria-hidden="true"></i></a>
+            
+                                <a href="https://www.facebook.com/JeremyTchao" class="social"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                            </p>
+                            
+                            <p id="github">
+                                Hosted on GitHub Pages
+                                <br> <img src="GitHub-Logo.png" alt="github logo">
+                            </p>
+                        </footer>
                 </div>
-                <div id="des">
-                    <h1>Please View My Work <br>in fullscreen :)</h1>
-                    <p>*If going fullscreen does not work, try reducing the zoom</p>
-                </div>
-                <footer id='resf'>
-                    <p><a id="rcon" class="contact-email-link">Zhaohui Zhao</a></p>
-                    <p id="rsocial" class="formatted-social-2x"></p>
-                    <p id="github">
-                        Hosted on GitHub Pages
-                        <br> <img src="GitHub-Logo.png" alt="github logo">
-                    </p>
-                </footer>
             </div>
         </div>
-    </div>
 
-    <div id="container">
-        <header id='header'><a name="header"></a>
-            <div id="htext">
-                <h1>ZHAOHUI ZHAO</h1>
-                <h2 id="hfirsth2">UC Davis Sophmore</h2>
-                <h2>Designer</h2>
-                <h2>Developer</h2>
-                <h2>Bridge bewteen technology and aesthetics</h2>
-            </div>
-            <img id="avatar" src="images/avatar.png" alt="avatar">
-            <div id="relativelayer">
-                <nav>
-                    <ul id='nav-proj-list'></ul>
-                </nav>
-            </div>
-        </header>
-        <div><a name="start"></a></div>
 
-        <div id="projects-list"></div>
+<!--**********************************End Responsive*************************************-->
 
-        <footer id='mfooter'>
-            <p><a id="con" class="contact-email-link">Zhaohui Zhao</a>
-                <br><span class='formatted-social-1x'></span>
-                <br><img src="GitHub-Logo.png" alt="github logo">
-                <p>
-        </footer>
-    </div>
+       
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+       <div id="container" class="container">
+           <header id='header'>
+                <a href="aboutme.html">
+                    <div id="htext">  
+                        <img id="avatar" src="images/avatar.png" alt="avatar">
+                        <h1>ZHAOHUI ZHAO</h1>
+                    </div>
+
+                </a>
+
+            </header>
+
+            <section class="navs"><a id="hamburger" onclick="openNav()" style="cursor: pointer">&nbsp;&nbsp;☰ MENU</a></section>
+            <section class="navs navsfixed"><a id="hamburger" onclick="openNav()" style="cursor: pointer">&nbsp;&nbsp;☰ MENU</a></section>
+
+                <div id="mySidenav" class="sidenav relativelayer">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="project1.html">Color Scheme </a></li>
+                        <li><a href="project2.html">Typeface Poster</a></li>
+                        <li><a href="project3.html">Event Poster</a></li>
+                        <li><a href="project4.html">Figure Poster</a></li>
+                        <li><a href="project5.html">Book Project</a></li>
+                        <li><a href="project6.html">Typography Form</a></li>
+                    </ul>
+                </div>
+
+                
+            
+
+
+                <section id="p1" class="projects">
+                    <a href="project1.html" class="texta">
+                        <h1>COLOR <br> SCHEME <br> EXPERIMENT</h1>
+
+                    </a>
+                    
+                    <a href="project1.html" class="photoa">
+                         <img src="images/project1.png" alt="project1">
+                    </a>
+                </section>
+
+
+                <section id="p2" class="projects">    
+                    <a href="project2.html" class="texta">
+                        <h1>TYPERFACE POSTER</h1>
+                    </a>
+                    <a href="project2.html" class="photoa">
+                        <img src="images/project2.png" alt="project2">
+                    </a>
+                </section>
+
+
+
+                <section id="p3" class="projects">
+                    <a href="project3.html" class="texta">
+                        <h1>Event Poster</h1>
+                    </a>
+                    <a href="project3.html" class="photoa">
+                        <img src="images/project3.png" alt="project3">
+                    </a>
+                </section>
+
+
+                <section id="p4" class="projects">
+                    <a href="project4.html" class="texta">
+                        <h1>Figure Poster</h1>
+                    </a>
+                    <a href="project4.html" class="photoa">
+                        <img src="images/project4.png" alt="project4">
+                    </a>
+                </section>
+
+                <section id="p5" class="projects">
+                    <a href="project5.html" class="texta">
+                        <h1>"The Play Instinct" <br> by Paul Rand</h1>
+                    </a>
+                    <a href="project5.html"  class="photoa">
+                        <img src="images/project5.png" alt="project5">
+                    </a>
+                </section>
+            
+
+                <section id="p6" class="projects">
+                    <a href="project6.html" class="texta">
+                        <h1>Typography <br> Form Experiment</h1>
+                    </a>
+
+                    <a href="project6.html" class="photoa">
+                        <img src="images/project6.png" alt="project6">
+                    </a>
+                </section>
+                
+                <footer id='mfooter'>
+
+
+                    
+                    <p><a id="con" href="mailto:&#122;&#106;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Zhaohui Zhao</a>
+                        <br>    
+                            <a href="https://www.linkedin.com/in/zjzhao/" class="social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.instagram.com/jeremytchao/" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                            <a href="https://www.flickr.com/photos/90156428@N06/" class="social"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+
+                            <a href="https://www.facebook.com/JeremyTchao" class="social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+
+                            <br> Hosted on GitHub Pages
+
+                            <br> <img src="GitHub-Logo.png" alt="github logo">
+                    <p>
+                    
+                
+                </footer>
+                
+        </div>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+     crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-</body>
-
+    
+    </body>
 </html>

@@ -1,0 +1,584 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************** End CSS RESET *****************/
+
+#responsive
+{
+
+    color: white;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 5px solid white;
+
+}
+
+#responsive img
+{
+    width: 130px;
+    margin-top: 60px;
+    margin-bottom: -35px;
+}
+
+
+
+#responsive p a
+{
+
+    color: white;
+    
+}
+
+#resf img
+{
+    width: 70px;
+    margin-top: 14px;
+    margin-bottom: -5px;
+    
+}
+
+#rcon
+{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+#rsocial
+{
+    font-size: 60px;
+}
+
+#rsocial .social
+{
+    font-size: 25px;
+}
+
+#github
+{
+    line-height: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+#responsive p a:hover
+{
+
+    color: #378cba;
+    
+}
+
+
+
+#mob, #des
+{
+    display: none;
+}
+
+#des p
+{
+
+    margin-top: -60px;
+    font-size: 17px;
+}
+
+#wrapper
+{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #00a7fe;
+}
+
+#anchor
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+#responsive h1
+{
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 300;
+    margin: 60px;
+    line-height: 70px;
+}
+
+#responsive footer
+{
+    margin-top: 90px;
+
+    padding: 10px;
+
+    margin-bottom: 50px;
+
+    
+}
+
+
+
+@media only screen and (max-width: 1365px) 
+{
+    
+    
+    
+    #aboutme, #container1, #container2, #container3, #container4, #container5, #container6 
+    {
+        
+        width: 960px;
+        margin: auto;
+        
+    }
+
+    .projects img
+    {
+        width: 500px;
+    }
+
+    #wrapper
+    {
+        display: none;
+        
+    }
+
+    #des
+    {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1023px) 
+{
+    
+    .container 
+    {
+        
+        display: none;
+        background: white;
+        
+    }
+
+    #wrapper
+    {
+        display: table;
+    }
+
+
+    #mob
+    {
+        display: block;
+    }
+
+    #des
+    {
+        display: none;
+    }
+
+        
+}
+
+/******************************reponsive*****************/
+
+
+/*******************nav********************/
+#navs-internal {
+    width: 1200px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 60px;
+    background: #2A2A2A;  
+}
+
+.navsfixed-internal {
+    
+    position: fixed;
+    margin-top: -60px;
+    width: 100%;
+    z-index: 100;
+    font-weight: 300;
+    line-height: 60px;
+    opacity: 0.8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 180; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.1s; 
+    text-align: right;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+    line-height: 60px;
+    margin-right: 20px;
+    z-index: 180;
+    padding: 8px 8px 8px 32px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+}
+
+/*******************end nav*******************/
+
+body
+{
+    background-color: #232323;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+#conwrapper
+{
+    width: 1366px;
+    background: #232323;
+    margin: auto;
+}
+
+.container
+{
+
+    width: 1200px;
+    margin: auto;
+    
+}
+
+
+a
+{
+    color: white;
+}
+
+header
+{
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+
+#htextap
+{
+
+    margin-top: 20px;
+
+}
+
+#htextap h1
+{
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 35px;
+}
+
+
+header img
+{
+  
+
+    display: inline-block;
+    width: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+
+    
+}
+
+
+
+#container2 h1, #container6 h1
+{
+    color: black;
+}
+
+
+header a
+{   
+    transform: translateZ(0);
+    display: inline-block;
+    text-decoration: none;
+
+    margin-left: 6%;
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+
+
+header a:hover
+{
+
+    transform: scale(1.1);
+}
+
+
+
+
+
+.projects
+{
+
+    width: 75%;
+    margin: auto;
+    z-index: 0;
+    
+}
+
+.projects h1
+{
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 55px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.projects img
+{
+    width: 720px;
+    display: inline;
+    box-shadow: 0px 0px 78px -29px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.projects p
+{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    padding-bottom: 15px;
+
+}
+
+.projects p:last-of-type
+{
+    
+    padding-bottom: 70px;
+
+}
+
+#p1 p:first-of-type
+{
+    padding-top: 30px;
+}
+
+#abtme p:first-of-type
+{
+    padding-top: 20px;
+}
+
+.projects p:first-of-type
+{
+    padding-top: 30px;
+}
+
+.projects a
+{
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.projects a:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+
+#aboutme
+{
+    background: linear-gradient(to right, rgb(0, 167, 254) 0%, rgb(17, 99, 220) 100%);
+}
+
+#aboutme .projects h1
+{
+    padding-bottom: 30px;
+}
+
+
+#container1
+{
+    background: linear-gradient(to right, rgba(19,83,128,1) 0%, rgba(209,75,156,1) 100%);
+}
+
+#container2
+{
+
+    background: linear-gradient(to right, rgba(202,199,4,1) 0%, rgba(255,251,0,1) 100%);
+    color: black;
+    
+}
+
+#container3
+{
+
+    background: linear-gradient(to right, rgba(209,199,183,1) 0%, rgba(125,112,84,1) 100%);
+}
+
+#container4
+{
+    background: linear-gradient(to right, rgba(30,31,31,1) 0%, rgba(133,129,128,1) 100%);
+}
+
+#container5
+{
+    background:linear-gradient(to right, rgba(135,211,237,1) 0%, rgba(0,181,241,1) 100%);
+}
+
+#container6
+{
+    background-color: white;
+    color: black;
+}
+
+
+#mfooter
+{
+    text-align: center;
+    height: 120px;
+    clear: both;
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    background: #2A2A2A;
+    box-shadow: 0px 12px 20px 4px rgba(0,0,0,0.44);
+
+
+}
+
+#mfooter p
+{
+    display: block;
+    margin: auto;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: white;
+
+}
+
+#con
+{
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+
+
+footer img
+{
+    width: 70px;
+    margin-top: 4px;
+}
+
+footer p a
+{
+    display: inline-block;
+    color: white;
+
+}
+
+footer p a:hover
+{
+    color: #00a7fe;
+}
+
+.social
+{
+    font-size: 27px;
+    margin-bottom: 15px;
+}
