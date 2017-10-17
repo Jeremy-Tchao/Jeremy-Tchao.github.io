@@ -66,10 +66,10 @@ table {
 
 .sidenav {
     height: 100%; 
+    top:0;
     width: 0; 
     position: fixed; 
     z-index: 180; 
-    top: 0;
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
@@ -91,6 +91,13 @@ table {
     margin-right: 20px;
     padding: 8px 8px 8px 32px;
 }
+
+.closebtn
+{
+    margin-top: -10px;
+}
+
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{

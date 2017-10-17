@@ -23,8 +23,17 @@ var contacts = [
 
 var isOpen = false;
 
-function computeBlackBorder () {
-    return ($(window).width() - $(".container").width()) / 2;
+function computeBlackBorder () 
+{
+    
+    var blacb =($(window).width() - $(".container").width()) / 2;
+
+    if(blacb <= 260)
+        return 260;
+    
+    
+    else 
+    return blacb;
 }
 
 var blackBorder = computeBlackBorder();
@@ -59,8 +68,8 @@ function openNav() {
     // document.getElementById("mySidenav").style.width = `${blackBorder + 200}px`;
     // document.getElementsByClassName("container")[0].style.marginLeft = `${200 + 80}px`;
 
-    document.getElementById("mySidenav").style.width = `${blackBorder+120}px`;
-    document.getElementsByClassName("container")[0].style.marginLeft = `${blackBorder+120}px`;
+    document.getElementById("mySidenav").style.width = `${blackBorder}px`;
+    document.getElementsByClassName("container")[0].style.marginLeft = `${blackBorder}px`;
     // document.getElementById("mySidenav").style.width = "320px";
     // document.getElementsByClassName("container")[0].style.marginLeft = `320px`;
 }
