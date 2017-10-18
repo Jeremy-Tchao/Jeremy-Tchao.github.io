@@ -123,6 +123,11 @@ table {
 {
 
 
+    .projects .pimg
+    {
+        height: 300px;
+    }
+
    
     /* #container 
     {

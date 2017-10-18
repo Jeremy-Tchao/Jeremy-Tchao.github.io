@@ -106,32 +106,42 @@ function closeNav() {
 
 
 
-    // function checkWidth() 
-    // {
-    //     var $window = $(window);
-    //     var windowsize = $window.width();
-        
+    function checkWidth() 
+    {
+        var $window = $(window);
+        var windowsize = $window.width();
+        var projectimgs = document.getElementsByClassName("photoa");
+        var il = projectimgs.length
+        var i = 0;
      
 
 
 
-    //     if( windowsize < 1250) 
-    //     {
-    //         document.getElementsByClassName("container")[0].style.width = "1024px";
-    //         document.getElementsByClassName("navs")[0].style.width = "1024px";
-    //         document.getElementsByClassName("navs")[1].style.width = "1024px";
-    //         document.getElementById("navs-internal").style.width = "1024px";
-    //         document.getElementById("navs-internal").style.width = "1024px";
-           
+        if( windowsize < 1250) 
+        {
+            document.getElementsByClassName("container")[0].style.width = "1024px";
+            document.getElementsByClassName("navs")[0].style.width = "1024px";
+            document.getElementsByClassName("navs")[1].style.width = "1024px";
+            document.getElementById("navs-internal").style.width = "1024px";
+            document.getElementById("navs-internal").style.width = "1024px";
 
-    //     }
+            
+            for(i =0 ;i<il;i++)
+            {
+                projectimgs[i].style.height="300px";
+                projectimgs[i].style.marginTop="-150px";
 
-    //     else 
-    //     {
-    //         document.getElementsByClassName("container")[0].style.width = "1200px";
-    //         document.getElementsByClassName("navs")[0].style.width = "1200px";
-    //         document.getElementsByClassName("navs")[1].style.width = "1200px";
-    //         document.getElementById("navs-internal").style.width = "1200px";
-    //     }
+            }
+        
+
+        }
+
+        else 
+        {
+            document.getElementsByClassName("container")[0].style.width = "1200px";
+            document.getElementsByClassName("navs")[0].style.width = "1200px";
+            document.getElementsByClassName("navs")[1].style.width = "1200px";
+            document.getElementById("navs-internal").style.width = "1200px";
+        }
        
-    // }
+    }
