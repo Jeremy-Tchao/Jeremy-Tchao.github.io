@@ -60,6 +60,28 @@ $(window).scroll(function() {
     }
 });
 
+
+
+$(document).ready(function() 
+{
+   
+    checkWidth();
+    // Bind event listener
+    
+});
+
+
+$(window).resize(checkWidth);
+
+
+
+
+
+
+
+
+
+
 // function to open the side nav bar
 function openNav() {
     isOpen = false? true: false;
@@ -80,3 +102,36 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementsByClassName("container")[0].style.marginLeft = "auto";
 }
+
+
+
+
+    // function checkWidth() 
+    // {
+    //     var $window = $(window);
+    //     var windowsize = $window.width();
+        
+     
+
+
+
+    //     if( windowsize < 1250) 
+    //     {
+    //         document.getElementsByClassName("container")[0].style.width = "1024px";
+    //         document.getElementsByClassName("navs")[0].style.width = "1024px";
+    //         document.getElementsByClassName("navs")[1].style.width = "1024px";
+    //         document.getElementById("navs-internal").style.width = "1024px";
+    //         document.getElementById("navs-internal").style.width = "1024px";
+           
+
+    //     }
+
+    //     else 
+    //     {
+    //         document.getElementsByClassName("container")[0].style.width = "1200px";
+    //         document.getElementsByClassName("navs")[0].style.width = "1200px";
+    //         document.getElementsByClassName("navs")[1].style.width = "1200px";
+    //         document.getElementById("navs-internal").style.width = "1200px";
+    //     }
+       
+    // }

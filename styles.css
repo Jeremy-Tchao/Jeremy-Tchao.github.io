@@ -117,140 +117,20 @@ table {
 
 /*******************responsive********************/
 
-#responsive
+
+
+@media only screen and (max-width: 1250px) 
 {
 
-    color: white;
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    border: 5px solid white;
 
-}
-
-#responsive img
-{
-    width: 130px;
-    margin-top: 60px;
-    margin-bottom: -35px;
-}
-
-
-
-#responsive p a
-{
-
-    color: white;
-    
-}
-
-#resf img
-{
-    width: 70px;
-    margin-top: 14px;
-    margin-bottom: -5px;
-    
-}
-
-#rcon
-{
-    font-size: 35px;
-    font-weight: 300;
-    line-height: 32px;
-}
-
-#rsocial
-{
-    font-size: 60px;
-}
-
-#rsocial .social
-{
-    font-size: 25px;
-}
-
-#github
-{
-    line-height: 5px;
-    margin-top: 30px;
-    font-size: 20px;
-    
-}
-
-#responsive p a:hover
-{
-
-    color: #378cba;
-    
-}
-
-
-
-
-#mob, #des
-{
-    display: none;
-}
-
-#des p
-{
-
-    margin-top: -60px;
-    font-size: 17px;
-}
-
-#wrapper
-{
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #00a7fe;
-}
-
-#anchor
-{
-    display: table-cell;
-    vertical-align: middle;
-}
-
-
-
-#responsive h1
-{
-    font-family: 'Roboto';
-    font-size: 48px;
-    font-weight: 300;
-    margin: 60px;
-    line-height: 70px;
-}
-
-#responsive footer
-{
-    margin-top: 90px;
-
-    padding: 10px;
-
-    margin-bottom: 50px;
-
-    
-}
-
-
-@media only screen and (max-width: 1365px) 
-{
-    
-
-    
-    #container 
+   
+    /* #container 
     {
         
         
         width: 1024px;
         margin:auto;
-    }
+    } */
 
     /* .photoa img
     {
@@ -270,60 +150,16 @@ table {
  
     
 
-    #des
-    {
-        display: none;
-    }
-
-    .navs
+    /* .navs
     {
         width: 1024px;
-    }
+    } */
 
   
     
 }
 
-@media only screen and (max-width: 1023px) 
-{
-    
 
-
-    .container 
-    {
-        
-        display: block;
-        
-        
-    }
-
-    .projects img
-    {
-    
-        height: 80%;
-        width: auto;
-        
-    }  
-
-    #wrapper
-    {
-        display: none;
-    }
-
-
-    #mob
-    {
-        display: none;
-    }
-
-    #des
-    {
-        display: none;
-    }
-
-        
-    
-}
 
 
 
