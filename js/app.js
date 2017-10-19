@@ -62,16 +62,16 @@ $(window).scroll(function() {
 
 
 
-$(document).ready(function() 
-{
+// $(document).ready(function() 
+// {
    
-    checkWidth();
-    // Bind event listener
+//     checkWidth();
+//     // Bind event listener
     
-});
+// });
 
 
-$(window).resize(checkWidth);
+// $(window).resize(checkWidth);
 
 
 
@@ -106,42 +106,31 @@ function closeNav() {
 
 
 
-    function checkWidth() 
-    {
-        var $window = $(window);
-        var windowsize = $window.width();
-        var projectimgs = document.getElementsByClassName("photoa");
-        var il = projectimgs.length
-        var i = 0;
+    // function checkWidth() 
+    // {
+    //     var $window = $(window);
+    //     var windowsize = $window.width();
+    //     var projectimgs = document.getElementsByClassName("photoa");
+    //     var il = projectimgs.length
+    //     var i = 0;
      
 
 
 
-        if( windowsize < 1250) 
-        {
-            document.getElementsByClassName("container")[0].style.width = "1024px";
-            document.getElementsByClassName("navs")[0].style.width = "1024px";
-            document.getElementsByClassName("navs")[1].style.width = "1024px";
-            document.getElementById("navs-internal").style.width = "1024px";
-            document.getElementById("navs-internal").style.width = "1024px";
-
+    //     if( windowsize < 1250) 
+    //     {
             
-            for(i =0 ;i<il;i++)
-            {
-                projectimgs[i].style.height="300px";
-                projectimgs[i].style.marginTop="-150px";
+    //             document.getElementsByClassName("photoa")[0].style.height="300px";
+    //             document.getElementsByClassName("photoa")[0].style.marginTop="-150px";
 
-            }
         
 
-        }
+    //     }
 
-        else 
-        {
-            document.getElementsByClassName("container")[0].style.width = "1200px";
-            document.getElementsByClassName("navs")[0].style.width = "1200px";
-            document.getElementsByClassName("navs")[1].style.width = "1200px";
-            document.getElementById("navs-internal").style.width = "1200px";
-        }
+    //     else 
+    //     {
+    //         document.getElementsByClassName("photoa")[0].style.height="380px";
+    //         document.getElementsByClassName("photoa")[0].style.marginTop="-190px";
+    //     }
        
-    }
+    // }
