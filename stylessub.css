@@ -47,6 +47,17 @@ table {
 {
 
 
+    .closebtn
+    {
+        margin-top: 95px;
+    }
+
+    .sidenav .closebtn 
+    {
+       
+        font-size: 36px;
+    }
+
     .projects img
     {
         width: 720px;
@@ -67,7 +78,19 @@ table {
 
 
 @media only screen and (max-width: 1250px) 
-{
+{   
+  
+    
+    .closebtn
+    {
+        margin-top: 95px;
+    }
+  
+    .sidenav .closebtn 
+    {
+       
+        font-size: 36px;
+    }
 
     .projects img
     {
@@ -98,6 +121,26 @@ table {
 
 @media only screen and (max-width: 900px) 
 {   
+
+
+    .sidenav .closebtn 
+    {
+       
+        font-size: 80px;
+    }
+
+
+    .closebtn
+    {
+        
+        margin-top: 86px;
+        
+    }
+    
+    #mySidenav a
+    {
+        line-height: 75px;
+    }
 
     .navs
     {
@@ -169,7 +212,7 @@ table {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
-    padding-top: 60px; 
+    padding-top: 175px; 
     transition: 0.1s; 
     text-align: right;
 }
@@ -199,8 +242,10 @@ table {
     position: absolute;
     top: 0;
     right: 0px;
-    font-size: 36px;
+    
 }
+
+
 
 /*******************end nav*******************/
 

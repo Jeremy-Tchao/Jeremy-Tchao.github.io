@@ -73,7 +73,7 @@ table {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
-    padding-top: 60px; 
+    padding-top: 200px; 
     transition: 0.1s; 
     text-align: right;
 }
@@ -92,10 +92,7 @@ table {
     padding: 8px 8px 8px 32px;
 }
 
-.closebtn
-{
-    margin-top: -10px;
-}
+
 
 
 
@@ -105,11 +102,12 @@ table {
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn 
+{
     position: absolute;
     top: 0;
     right: 0px;
-    font-size: 36px;
+    
 }
 
 /*******************end nav*******************/
@@ -121,9 +119,23 @@ table {
 @media only screen and (min-width: 1250px) 
 {
 
+
+
+    .sidenav .closebtn 
+    {
+       
+        font-size: 36px;
+    }
+
     .projects
     {
         height: 600px;
+    }
+
+    .closebtn
+    {
+        
+        margin-top: 120px;
     }
 
     .projects .photoa
@@ -165,12 +177,22 @@ table {
 @media only screen and (max-width: 1250px) 
 {
 
+    .sidenav .closebtn 
+    {
+       
+        font-size: 36px;
+    }
 
     .projects
     {
         height: 600px;
     }
 
+    .closebtn
+    {
+        
+        margin-top: 120px;
+    }
 
     .projects .pimg
     {
@@ -234,6 +256,7 @@ table {
     }
     
   
+  
     
 }
 
@@ -241,6 +264,23 @@ table {
 
 @media only screen and (max-width: 900px) 
 {   
+
+    .sidenav .closebtn 
+    {
+       
+        font-size: 80px;
+    }
+
+    #mySidenav a
+    {
+        line-height: 75px;
+    }
+
+    .closebtn
+    {
+        
+        margin-top: 110px;
+    }
 
     .navs
     {
