@@ -43,6 +43,29 @@ table {
 /****************** End CSS RESET *****************/
 
 
+@media only screen and (min-width: 1250px) 
+{
+
+
+    .projects img
+    {
+        width: 720px;
+    }
+
+    #navs-internal 
+    {
+        width: 1200px;
+    }
+    
+    .container
+    {
+        width: 1200px;
+    }
+  
+    
+}
+
+
 @media only screen and (max-width: 1250px) 
 {
 
@@ -70,27 +93,7 @@ table {
     
 }
 
-@media only screen and (min-width: 1250px) 
-{
 
-
-    .projects img
-    {
-        width: 720px;
-    }
-
-    #navs-internal 
-    {
-        width: 1200px;
-    }
-    
-    .container
-    {
-        width: 1200px;
-    }
-  
-    
-}
 
 
 @media only screen and (max-width: 1024px) 
@@ -100,6 +103,12 @@ table {
     {
         width: 640px;
     }
+
+    #navs-internal 
+    {
+        width: 640px;
+    }
+
 
    .projects img
    {
