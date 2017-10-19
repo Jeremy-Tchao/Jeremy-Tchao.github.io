@@ -101,12 +101,12 @@ table {
 
     .navs
     {
-        width: 640px;
+        width: 800px;
     }
 
     #navs-internal 
     {
-        width: 640px;
+        width: 800px;
     }
 
 
@@ -121,7 +121,7 @@ table {
     .container 
     {
         
-        width: 640px;
+        width: 800px;
         margin:auto;
     } 
 
