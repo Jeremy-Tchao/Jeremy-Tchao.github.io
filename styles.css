@@ -73,7 +73,7 @@ table {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
-    padding-top: 200px; 
+    padding-top: 240px; 
     transition: 0.1s; 
     text-align: right;
 }
@@ -268,7 +268,7 @@ table {
     .sidenav .closebtn 
     {
        
-        font-size: 80px;
+        font-size: 100px;
     }
 
     #mySidenav a
@@ -279,7 +279,7 @@ table {
     .closebtn
     {
         
-        margin-top: 110px;
+        margin-top: 106px;
     }
 
     .navs

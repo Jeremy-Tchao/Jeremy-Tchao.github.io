@@ -126,14 +126,14 @@ table {
     .sidenav .closebtn 
     {
        
-        font-size: 80px;
+        font-size: 100px;
     }
 
 
     .closebtn
     {
         
-        margin-top: 86px;
+        margin-top: 81px;
         
     }
     
@@ -212,7 +212,7 @@ table {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
-    padding-top: 175px; 
+    padding-top: 230px; 
     transition: 0.1s; 
     text-align: right;
 }
