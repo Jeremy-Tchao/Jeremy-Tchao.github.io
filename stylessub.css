@@ -469,7 +469,7 @@ header a:hover
 {
 
     background: linear-gradient(to right, rgb(103,141,214) 0%,rgb(247,247,247) 100%);
-    color: black;
+    /* color: black; */
 
 }
 
