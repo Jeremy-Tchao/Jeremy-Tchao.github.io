@@ -588,7 +588,7 @@ header a:hover:before
 
 
 
-#p2 h1, #p6 h1
+#p2 h1
 {
     color: black;
 }
@@ -622,12 +622,13 @@ header a:hover:before
 #p3
 {
 
-    background: linear-gradient(to right, rgba(209,199,183,1) 0%, rgba(125,112,84,1) 100%);
+    background: linear-gradient(to right, rgb(103,141,214) 0%,rgb(247,247,247) 100%);
+    
 }
 
 #p4
 {
-    background: linear-gradient(to right, rgb(64, 66, 66) 0%, rgba(133,129,128,1) 100%);
+    background: linear-gradient(to right, rgb(48,246,161) 0%,rgb(31,159,248) 100%);
 }
 
 #p5
@@ -636,9 +637,14 @@ header a:hover:before
 }
 
 #p6
+{   
+    background: linear-gradient(to right, rgb(117,146,177) 0%,rgb(219,222,224) 100%);    
+    
+}
+
+#p7
 {
-    background-color: white;
-    color: black;
+    background: linear-gradient(to right, rgb(0, 167, 254) 0%, rgb(17, 99, 220) 100%);
 }
 
 

@@ -58,10 +58,17 @@ table {
         font-size: 36px;
     }
 
+    #interface
+    {
+        width: 380px;
+    }
+
     .projects img
     {
         width: 720px;
     }
+
+    
 
     #navs-internal 
     {
@@ -97,6 +104,10 @@ table {
         width: 720px;
     }
 
+    #interface
+    {
+        width: 380px;
+    }
 
     .container 
     {
@@ -318,7 +329,7 @@ header img
 
 
 
-#container2 h1, #container6 h1
+#container2 h1
 {
     color: black;
 }
@@ -457,12 +468,24 @@ header a:hover
 #container3
 {
 
-    background: linear-gradient(to right, rgba(209,199,183,1) 0%, rgba(125,112,84,1) 100%);
+    background: linear-gradient(to right, rgb(103,141,214) 0%,rgb(247,247,247) 100%);
+    color: black;
+
+}
+
+#container3 h1
+{
+    color: white;
+}
+
+#container3 a
+{
+    color: black;
 }
 
 #container4
 {
-    background: linear-gradient(to right, rgba(30,31,31,1) 0%, rgba(133,129,128,1) 100%);
+    background: linear-gradient(to right, rgb(48,246,161) 0%,rgb(31,159,248) 100%);
 }
 
 #container5
@@ -472,8 +495,13 @@ header a:hover
 
 #container6
 {
-    background-color: white;
-    color: black;
+    background: linear-gradient(to right, rgb(117,146,177) 0%,rgb(219,222,224) 100%);    
+    
+}
+
+#container7
+{
+    background: linear-gradient(to right, rgb(0, 167, 254) 0%, rgb(17, 99, 220) 100%);
 }
 
 
