@@ -405,6 +405,22 @@ header a:hover
 
 }
 
+
+.projects ul li
+{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+
+.projects ul li:first-of-type
+{
+    margin-top: -13px;
+}
+
+
+
 .projects p:last-of-type
 {
     
@@ -553,7 +569,10 @@ em
 {
     display: block;
     margin-left: 20px;
+    
 }
+
+
 
 #con
 {
