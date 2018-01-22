@@ -163,7 +163,7 @@ table {
     }
     
     
-    #p1 .texta
+    #p3 .texta
     {
         width: 200px;
     }
@@ -234,12 +234,12 @@ table {
         
     }
 
-    #p1 .texta
+    #p3 .texta
     {
         width: 200px;
     }
 
-    #p2 .texta
+    #p4 .texta
     {
         width: 480px;
     }
@@ -318,7 +318,7 @@ table {
 
     }
 
-    #p1 .texta, #p2 .texta
+    #p3 .texta, #p4 .texta
     {
         width: 600px;
     }
@@ -588,13 +588,26 @@ header a:hover:before
 
 
 
-#p2 h1
+#p4 h1
 {
     color: black;
 }
 
-
 #p1
+{
+    background: linear-gradient(to right, rgba(9,240,136,1) 0%, rgba(95,144,242,1) 100%);
+}
+
+#p2
+{
+
+    background: linear-gradient(to right, rgb(103,141,214) 0%,rgb(247,247,247) 100%);
+    
+}
+
+
+
+#p3
 {
     
     background: linear-gradient(to right, rgba(19,83,128,1) 0%, rgba(209,75,156,1) 100%);
@@ -604,7 +617,7 @@ header a:hover:before
 
 
 
-#p2
+#p4
 {
 
     background: linear-gradient(to right, rgba(202,199,4,1) 0%, rgba(255,251,0,1) 100%);
@@ -619,17 +632,7 @@ header a:hover:before
     width:650px;
 }
 
-#p3
-{
 
-    background: linear-gradient(to right, rgb(103,141,214) 0%,rgb(247,247,247) 100%);
-    
-}
-
-#p4
-{
-    background: linear-gradient(to right, rgba(9,240,136,1) 0%, rgba(95,144,242,1) 100%);
-}
 
 #p5
 {
