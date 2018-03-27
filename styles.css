@@ -334,6 +334,8 @@ table {
         margin: auto;   
         top:10%;     
     }
+    
+    
 
 
     #htext img
@@ -382,6 +384,8 @@ body
     width: 1200px;
     background: #2A2A2A;
     margin: auto;
+    animation: 2s fadeIn;
+
 }
 
 
@@ -400,7 +404,6 @@ header
     text-align: center;
     z-index: 1;
     
-
     
 }
 
@@ -513,6 +516,8 @@ header a:hover:before
     
     line-height: 600px;
     position: relative;
+
+    animation: 1s fadeInUp;
     
 }
 
@@ -703,4 +708,43 @@ footer p a:hover
 {
     font-size: 27px;
     margin-bottom: 15px;
+}
+
+
+/* ***********************Animations***************** */
+
+@keyframes fadeIn
+{
+    0%{
+        opacity:  0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
