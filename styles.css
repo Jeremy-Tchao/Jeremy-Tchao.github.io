@@ -710,7 +710,12 @@ footer p a:hover
     margin-bottom: 15px;
 }
 
+.social-text
+{
+    font-size: 0px;
+    margin-bottom: 15px;
 
+}
 /* ***********************Animations***************** */
 
 @keyframes fadeIn
